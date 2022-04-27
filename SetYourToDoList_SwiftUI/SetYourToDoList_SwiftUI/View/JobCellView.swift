@@ -9,7 +9,7 @@ import SwiftUI
 
 struct JobCellView: View {
     
-    var jobImageName: String = "seal"
+    var jobImageName: String = "pencil.circle"
     var jobTitle: String
     var jobStartTime: Date
     var jobEndTime: Date
@@ -45,6 +45,6 @@ struct JobCellView: View {
 
 struct JobCellView_Previews: PreviewProvider {
     static var previews: some View {
-        JobCellView(jobImageName: "seal", jobTitle: "제목", jobStartTime: Date(), jobEndTime: .now + 10, isJobAchieved: false)
+        JobCellView(jobImageName: "seal", jobTitle: "제목", jobStartTime: Date(), jobEndTime: .now + 30, isJobAchieved: false)
     }
 }

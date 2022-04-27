@@ -14,6 +14,7 @@
 		BB6BC3ED2818168D0005A0C4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6BC3EC2818168D0005A0C4 /* Persistence.swift */; };
 		BB6BC3F02818168D0005A0C4 /* SetYourToDoList_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB6BC3EE2818168D0005A0C4 /* SetYourToDoList_SwiftUI.xcdatamodeld */; };
 		BB6BC3FA281844E30005A0C4 /* JobCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6BC3F9281844E30005A0C4 /* JobCellView.swift */; };
+		BB6BC3FC28186E4D0005A0C4 /* AddJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6BC3FB28186E4D0005A0C4 /* AddJobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BB6BC3EC2818168D0005A0C4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BB6BC3EF2818168D0005A0C4 /* SetYourToDoList_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SetYourToDoList_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		BB6BC3F9281844E30005A0C4 /* JobCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellView.swift; sourceTree = "<group>"; };
+		BB6BC3FB28186E4D0005A0C4 /* AddJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +59,10 @@
 		BB6BC3E22818168C0005A0C4 /* SetYourToDoList_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BB6BC3E32818168C0005A0C4 /* SetYourToDoList_SwiftUIApp.swift */,
 				BB6BC3F6281836200005A0C4 /* Model */,
 				BB6BC3F7281836260005A0C4 /* View */,
 				BB6BC3F82818362A0005A0C4 /* ViewModel */,
-				BB6BC3E32818168C0005A0C4 /* SetYourToDoList_SwiftUIApp.swift */,
 				BB6BC3E72818168D0005A0C4 /* Assets.xcassets */,
 				BB6BC3EC2818168D0005A0C4 /* Persistence.swift */,
 				BB6BC3EE2818168D0005A0C4 /* SetYourToDoList_SwiftUI.xcdatamodeld */,
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BB6BC3E52818168C0005A0C4 /* MainView.swift */,
+				BB6BC3FB28186E4D0005A0C4 /* AddJobView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6BC3FC28186E4D0005A0C4 /* AddJobView.swift in Sources */,
 				BB6BC3ED2818168D0005A0C4 /* Persistence.swift in Sources */,
 				BB6BC3E62818168C0005A0C4 /* MainView.swift in Sources */,
 				BB6BC3E42818168C0005A0C4 /* SetYourToDoList_SwiftUIApp.swift in Sources */,

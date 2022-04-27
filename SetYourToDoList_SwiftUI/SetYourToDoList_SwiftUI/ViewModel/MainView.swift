@@ -12,13 +12,17 @@ struct MainView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(entity: Job.entity(), sortDescriptors: [])
-    
     private var jobs: FetchedResults<Job>
 //    private var items: FetchedResults<Item>
 
+    var colorArr: [Color] = [
+        Color.orange, .yellow, .green, .blue, .gray, .brown, .black
+    ]
+    var colorIndex: Int = 2
+    
     var body: some View {
         NavigationView {
-            ZStack {
+            ZStack(alignment: .bottomTrailing) {
                 List {
                     ForEach(jobs) { job in
                         NavigationLink {
@@ -27,7 +31,9 @@ struct MainView: View {
                             JobCellView(jobTitle: job.title!,
                                         jobStartTime: job.startTime!,
                                         jobEndTime: job.endTime!,
-                                        isJobAchieved: job.isAchieved)
+                                        isJobAchieved: job.isAchieved,
+                                        cellColor: colorArr[colorIndex])
+                                .listRowSeparator(.hidden)
                         }
                     }
     //                ForEach(items) { item in
@@ -52,7 +58,21 @@ struct MainView: View {
                 } // toolbar
                 .navigationTitle("할 일 목록")
                 .navigationBarTitleDisplayMode(.inline)
-                Text("Select an item")
+                
+                NavigationLink {
+                    AddJobView()
+                } label: {
+                    Circle()
+                        .foregroundColor(.yellow)
+                        .frame(width: 50, height: 50)
+                        .overlay {
+                            Image(systemName: "plus")
+                                .font(.system(size: 30))
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+                }
+                    
             }
             
         } // NavigationView
